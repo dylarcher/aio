@@ -1,6 +1,63 @@
 {
-  "compilerOptions": {
-    "baseUrl": "src"
-  },
-  "include": ["src"]
+	"$schema": "http://json.schemastore.org/tsconfig",
+	"extends": "@react-native-community",
+	"compilerOptions": {
+		"allowJs": true,
+		"baseUrl": ".",
+		"checkJs": false,
+		"declaration": false,
+		"declarationMap": false,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"lib": ["dom", "dom.iterable", "es2020"],
+		"module": "es2020",
+		"moduleResolution": "node",
+		"noEmit": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"paths": {
+			"@assets/*": ["src/assets/*"],
+			"@components/*": ["src/components/*"],
+			"@constants/*": ["src/constants/*"],
+			"@context/*": ["src/context/*"],
+			"@features/*": ["src/features/*"],
+			"@hooks/*": ["src/hooks/*"],
+			"@pages/*": ["src/pages/*"],
+			"@services/*": ["src/services/*"],
+			"@src/*": ["src/*"],
+			"@styles/*": ["src/styles/*"],
+			"@types/*": ["src/types/*"],
+			"@utils/*": ["src/utils/*"]
+		},
+		"resolveJsonModule": true,
+		"rootDirs": [
+			"src",
+			"data",
+			"public",
+			"docs",
+			"assets",
+			"experiments",
+			"tests"
+		],
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "es2020",
+		"typeRoots": ["node_modules/@types", "src/types"],
+		"types": ["node", "react", "react-dom"],
+		"useDefineForClassFields": true
+	},
+	"exclude": ["node_modules", "dist", ".*"],
+	"include": ["**/*", "node_modules/@types"],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		}
+	]
 }
