@@ -33,12 +33,6 @@
     "node": ">=20.19.3",
     "npm": ">=9.6.7"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "name": "comprehensive-web-project",
   "packageManager": "npm@10.8.2",
   "private": true,
