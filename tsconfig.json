@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationDir": "src/types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "sourceRoot": "src",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"]
+    },
+    "resolveJsonModule": true
+  },
+"include": ["src/**/*.js", "tests/**/*.js", "playwright.config.js", "lightningcss.config.js", "biome.json", ".markdownlint.json"],
+  "exclude": ["node_modules", "dist"]
+}
