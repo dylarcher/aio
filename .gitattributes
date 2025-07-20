@@ -1,0 +1,45 @@
+# Set default text file handling
+* text=auto
+
+# Treat all files as UTF-8
+* text eol=lf
+
+# Prevent binary files from being modified by Git filters
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.tar binary
+*.mp4 binary
+*.mov binary
+*.exe binary
+*.dll binary
+
+# Mark lock files as text with LF endings
+*.lock text eol=lf
+
+# Handle shell scripts and config files as text with LF endings
+*.sh text eol=lf
+*.env text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.md text eol=lf
+*.ini text eol=lf
+
+# Handle Windows batch files as text with CRLF endings
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Prevent linguist from counting vendor files
+vendor/** linguist-vendored
+
+# Prevent linguist from counting minified files
+*.min.js linguist-minified
+*.min.css linguist-minified
