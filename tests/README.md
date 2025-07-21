@@ -1,3 +1,3 @@
 # Tests
 
-This directory contains all automated tests for the project.
+This directory contains the tests for the project.

@@ -18,6 +18,13 @@
     },
     "resolveJsonModule": true
   },
-"include": ["src/**/*.js", "tests/**/*.js", "playwright.config.js", "lightningcss.config.js", "biome.json", ".markdownlint.json"],
+  "include": [
+    "src/**/*.js",
+    "tests/**/*.js",
+    "playwright.config.js",
+    "lightningcss.config.js",
+    "biome.json",
+    ".markdownlint.json"
+  ],
   "exclude": ["node_modules", "dist"]
 }

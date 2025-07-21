@@ -1,3 +1,3 @@
-# Test coverage
+# Test Coverage
 
-This directory has all the test coverage reports of the project source code.
+This directory contains the test coverage reports for the project.
