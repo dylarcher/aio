@@ -1,0 +1,92 @@
+# .github/labeler.yml - Configuration for the Labeler action.
+# See https://github.com/actions/labeler for more information.
+# ---
+# ATTN: approved - Reviewed and approved
+# ATTN: blocked - This effort is externally blocked
+# ATTN: duplicated - This issue or pull request already exists
+# ATTN: voided - This will not be worked on
+# category: chore - Change to settings
+# category: defect - Something isn't working
+# category: documentation - Improvements or additions to documentation
+# category: enhancement - Improves existing functionality or setup
+# category: feature - New feature or request
+# complexity: 1 - Simple or quick task
+# complexity: 2 - Easy or short timespan task
+# complexity: 3 - Average or relatively fast task
+# complexity: 5 - Moderately difficult or lengthy task
+# complexity: 8 - Complex or time consuming task
+# NEED: advise - Extra attention is needed
+# NEED: details - This does not seem to be correct
+# NEED: repairs - Further information is requested
+# NEED: review - Ready for reviews
+# proposal: defective - Has issues or bugs
+# proposal: finished - Effort is complete
+# proposal: incomplete - The goal of this effort is unmet
+# timeline: long - Expected to be a time consuming task
+# timeline: quick - Expected to be a short effort duration
+# timeline: standard - Timespan expectation is average
+# ---
+# Note: The order of labels matters. The first matching label will be applied.
+# More specific rules should come before more general ones.
+
+"category: chore":
+  - any:
+      - ".github/**"
+      - ".editorconfig"
+      - ".gitattributes"
+      - ".gitignore"
+      - ".markdownlint.json"
+      - ".npmrc"
+      - ".nvmrc"
+      - "biome.json"
+      - "jsconfig.json"
+      - "LICENSE"
+      - "lightningcss.config.js"
+      - "package.json"
+      - "package-lock.json"
+      - "playwright.config.js"
+      - "tailwind.config.js"
+      - "tsconfig.json"
+
+"category: documentation":
+  - any:
+      - "docs/**"
+      - "**/*.md"
+
+"category: defect":
+  - any:
+      - "tests/**"
+
+"category: enhancement":
+  - any:
+      - "src/components/**"
+      - "src/hooks/**"
+      - "src/lib/**"
+      - "src/styles/**"
+      - "src/utils/**"
+
+"category: feature":
+  - any:
+      - "src/views/**"
+      - "src/services/**"
+      - "src/router.js"
+
+"category: asset":
+  - any:
+      - "assets/**"
+      - "**/*.avif"
+      - "**/*.eot"
+      - "**/*.gif"
+      - "**/*.ico"
+      - "**/*.mp3"
+      - "**/*.mp4"
+      - "**/*.ogg"
+      - "**/*.otf"
+      - "**/*.png"
+      - "**/*.svg"
+      - "**/*.ttf"
+      - "**/*.wav"
+      - "**/*.webm"
+      - "**/*.webp"
+      - "**/*.woff"
+      - "**/*.woff2"
