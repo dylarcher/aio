@@ -9,7 +9,7 @@ import { initRouter } from './router.js';
  * @returns {void}
  */
 function main() {
-  console.log("Welcome to the vanilla JavaScript project!");
+  console.log('Welcome to the vanilla JavaScript project!');
   initRouter();
 }
 

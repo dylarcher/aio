@@ -1,3 +1,4 @@
-# Services
+# Services Specifications
 
-This directory contains documentation for core application services.
+This directory contains documentation for core application services (e.g.,
+AuthService.md).

@@ -10,9 +10,9 @@
 
 /** @type {Route[]} */
 const routes = [
-  { path: "/", template: "<h1>Home</h1>" },
-  { path: "/about", template: "<h1>About</h1>" },
-  { path: "/contact", template: "<h1>Contact</h1>" },
+  { path: '/', template: '<h1>Home</h1>' },
+  { path: '/about', template: '<h1>About</h1>' },
+  { path: '/contact', template: '<h1>Contact</h1>' },
 ];
 
 /**
@@ -22,8 +22,8 @@ const routes = [
 const render = () => {
   const path = window.location.pathname;
   const match = routes.find((route) => route.path === path);
-  const view = match ? match.template : "<h1>404 - Not Found</h1>";
-  const app = document.getElementById("app");
+  const view = match ? match.template : '<h1>404 - Not Found</h1>';
+  const app = document.getElementById('app');
   if (app) {
     app.innerHTML = view;
   }
@@ -35,7 +35,7 @@ const render = () => {
  * @returns {void}
  */
 const navigate = (path) => {
-  window.history.pushState({}, "", path);
+  window.history.pushState({}, '', path);
   render();
 };
 
@@ -44,11 +44,14 @@ const navigate = (path) => {
  * @returns {void}
  */
 export const initRouter = () => {
-  window.addEventListener("popstate", render);
-  document.addEventListener("DOMContentLoaded", () => {
-    document.body.addEventListener("click", (e) => {
+  window.addEventListener('popstate', render);
+  document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', (e) => {
       const target = e.target;
-      if (target instanceof HTMLAnchorElement && target.matches("[data-link]")) {
+      if (
+        target instanceof HTMLAnchorElement &&
+        target.matches('[data-link]')
+      ) {
         e.preventDefault();
         navigate(target.href);
       }
