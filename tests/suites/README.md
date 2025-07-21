@@ -1,3 +1,3 @@
-# Test suites
+# Test Suites
 
-This directory contains all the suites that encompass test type groupings.
+This directory contains the test suites for the project.

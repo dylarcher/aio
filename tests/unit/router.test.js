@@ -5,9 +5,12 @@ import { initRouter } from '../../src/router.js';
 
 test('Router', async (t) => {
   await t.test('should render the home page by default', () => {
-    const dom = new JSDOM('<!DOCTYPE html><html><body><div id="app"></div></body></html>', {
-      url: 'http://localhost/',
-    });
+    const dom = new JSDOM(
+      '<!DOCTYPE html><html><body><div id="app"></div></body></html>',
+      {
+        url: 'http://localhost/',
+      },
+    );
     global.window = dom.window;
     global.document = dom.window.document;
     initRouter();
@@ -16,9 +19,12 @@ test('Router', async (t) => {
   });
 
   await t.test('should render the about page when navigating to /about', () => {
-    const dom = new JSDOM('<!DOCTYPE html><html><body><div id="app"></div></body></html>', {
-      url: 'http://localhost/about',
-    });
+    const dom = new JSDOM(
+      '<!DOCTYPE html><html><body><div id="app"></div></body></html>',
+      {
+        url: 'http://localhost/about',
+      },
+    );
     global.window = dom.window;
     global.document = dom.window.document;
     initRouter();

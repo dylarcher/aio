@@ -1,3 +1,4 @@
-# Components
+# Components Specifications
 
-This directory contains detailed specs for reusable UI components.
+This directory contains detailed specs for reusable UI components (e.g., Button.md,
+Card.md).

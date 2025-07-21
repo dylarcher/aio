@@ -1,3 +1,5 @@
-# Data analysis results
+# Analysis Results
 
-This directory contains outputs of data analysis.
+This directory contains the outputs of data analysis (summary statistics, reports,
+intermediate files). Naming convention:
+\[YYYYMMDD\]\_\[analysis\_type\]\_\[description\]\\.\[ext\].
