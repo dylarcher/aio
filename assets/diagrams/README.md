@@ -1,3 +1,4 @@
-# Diagram Assets
+# Diagrams
 
-This directory contains conceptual diagrams, flowcharts, and architectural diagrams.
+This directory contains conceptual diagrams, flowcharts, and architectural
+diagrams (e.g., .svg, .png, .drawio).
