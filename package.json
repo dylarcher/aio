@@ -37,16 +37,16 @@
   "packageManager": "npm@10.8.2",
   "private": true,
   "scripts": {
-    "build": "tsc",
-    "build:types": "tsc --emitDeclarationOnly",
-    "build:sourcemaps": "tsc --sourceMap",
-    "build:css": "./node_modules/.bin/lightningcss --config-file lightningcss.config.js src/styles/index.css -o dist/styles.css",
+    "build": "npx tsc",
+    "build:types": "npx tsc --emitDeclarationOnly",
+    "build:sourcemaps": "npx tsc --sourceMap",
+    "build:css": "npx lightningcss --config-file lightningcss.config.js src/styles/global.css -o dist/styles.css",
     "start": "node dist/index.js",
-    "test": "c8 node --test",
-    "test:ui": "playwright test",
-    "lint": "biome lint .",
-    "lint:md": "markdownlint \"**/*.md\"",
-    "format": "biome format --write ."
+    "test": "npx c8 node --test",
+    "test:ui": "npx playwright test",
+    "lint": "npx biome lint --write .",
+    "lint:md": "npx markdownlint **/*.md",
+    "format": "npx biome format --write ."
   },
   "type": "module",
   "version": "0.1.0"
